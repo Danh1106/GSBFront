@@ -1,0 +1,21 @@
+.logo {
+height:40px;
+width:70px;
+background-size: 100%;
+background-image: url('../login/gsb.jpg');
+background-repeat:no-repeat;
+}
+
+a:hover  {
+background-color: rgb(75, 75, 83);
+}
+
+
+.nav-item2 {
+    padding-left:1050px;
+
+}
+
+li {
+    padding-left:40px;
+}

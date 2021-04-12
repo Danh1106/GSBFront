@@ -1,0 +1,25 @@
+h1 {
+padding: 30px 30px 30px 30px;
+margin-bottom:150px;
+letter-spacing:10px;
+}
+
+.container{
+    padding:4rem;
+    text-align:center;
+}
+.btnmodifier {
+    background-color:grey;
+}
+
+.modal-dialog{
+    max-width: 90vw !important;
+}
+.modal-body {
+    padding:2rem;
+}
+.fraishorsforfait {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
