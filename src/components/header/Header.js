@@ -28,10 +28,10 @@ class Header extends React.Component {
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                  <a class="nav-link active" href="Accueil">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Fiche De Frais</a>
+                  <a class="nav-link active" href="bills">Fiche De Frais</a>
                 </li>
 
                 <li class="nav-item2">

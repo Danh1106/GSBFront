@@ -7,12 +7,18 @@ background-repeat:no-repeat;
 }
 
 a:hover  {
-background-color: rgb(75, 75, 83);
+
+color:rgb(51, 156, 212) !important;
+
+}
+a{font-family: 'Rouge Script', cursive; 
+    font-size: 18px; font-weight: normal;   text-shadow: 1px 1px 2px #000000;
+text-align:center;
+width:150px;
 }
 
-
 .nav-item2 {
-    padding-left:1050px;
+    padding-left:1880px;
 
 }
 

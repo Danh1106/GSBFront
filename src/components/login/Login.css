@@ -1,9 +1,10 @@
 .background{
   background-image:url("./gsb.jpg");
-  height:650px;
+  background-size:80%;
+  height:660px;
   width:700px;
   margin-top:50px;
-  margin-left:50px;
+  margin-left:450px;
   background-repeat:no-repeat;
   position:absolute;
   }
@@ -12,24 +13,50 @@
 
 
 input,label {
-    margin:10px 0px 10px 0px;
-    letter-spacing: 6px;
-
+    margin:30px 0px 10px 0px;
+    letter-spacing: 4px;
+    font-size:18px;
+    font-weight: bolder;
+    
 }
 input:hover{
 
-        background-color: rgb(77, 77, 92);
+        background-color: rgb(51, 156, 212);
       
 }
 
 .overlay {
-    background: -webkit-linear-gradient(#ffffff, #B993D6);
-    background: linear-gradient(#789bdd, #e6e6e6);
+
+
     opacity: 0.85;
     filter: alpha(opacity=85);
-    height: 685px;
-    width: 1260px;
-    margin-left:500px;
+    height: 1292px;
+    width: 1060px;
+right:0;    
+position:absolute;
+  }
+  .overlay2 {
+
+    background: linear-gradient(#000000, #334491);
+    opacity: 15;
+    filter: alpha(opacity=5);
+    height: 1292px;
+    width: 1600px;
+    margin-left:-1200px;
 
   }
- 
+.h3 {
+
+  font-weight: bold; 
+    color:rgb(51, 156, 212);
+font-family: 'Rouge Script', cursive; 
+font-size: 100px; font-weight: normal; line-height: 38px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #000000;
+}
+.titre {
+  margin-top:150px;
+}
+.boutonlogin {
+  display: inline-block;
+    margin-left:0px;
+    text-align:center;
+}

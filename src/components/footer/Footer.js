@@ -13,7 +13,7 @@ class Footer extends React.Component {
        
     
       <footer>      
-<p></p>
+<h6></h6>
       </footer>
     )
   }

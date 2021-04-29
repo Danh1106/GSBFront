@@ -76,6 +76,7 @@ class BillsList extends React.Component {
           <table class="table table-hover">
             <thead>
               <tr>
+                <th>id Utilisateur</th>
                 <th>Mois</th>
                 <th>Justificatifs</th>
                 <th>Montant</th>
@@ -122,7 +123,7 @@ class BillsList extends React.Component {
                                     <thead>
                                         <tr>
                                             <th scope="col">Type</th>
-                                            <th scope="col">Qte</th>
+                                            <th scope="col">Quantite</th>
                                             <th scope="col">Montant</th>
                                             <th scope="col">Total</th>
                                         </tr>
@@ -155,13 +156,15 @@ class BillsList extends React.Component {
                             <div className="row">
                               <div className ="col-12">
                                 <div className="fraishorsforfait">
-                                  <h3>Frais hors forfait</h3>
-                                  <button className="btn btn-info" onClick={() => this.addRow()}>Ajouter frais hors forfait
-                                  </button>
+                     
+
                                   </div>
                                   </div>
                                 </div>
                               </div>
+                              <div className="modal-header">
+                            <h5 className="modal-title">FRAIS HORS FORFAIT</h5>
+                        </div>
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -192,12 +195,15 @@ class BillsList extends React.Component {
                                 </table>
 
                         <div className="modal-footer">
+                        <button className="btn btn-primary" onClick={() => this.addRow()}>Ajouter frais hors forfait
+                                  </button>
                             <button type="button" className="btn btn-primary" onClick={this.postFiche()}>
                                 Enregistrer
                              </button>
                             <button type="button" className="btn btn-secondary"onClick={() => this.showModal()} >
                                 Annuler
                            </button>
+                           
                         </div>
                     </Modal>
                 </div>

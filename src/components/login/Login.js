@@ -27,7 +27,7 @@ class Login extends React.Component {
               console.log(decoded)
         localStorage.setItem('id',decoded.id)
         localStorage.setItem('token',token) 
-        this.props.history.push('/bills')
+        this.props.history.push('/Accueil')
     }
   }catch (e) {
       console.error(e)
@@ -45,9 +45,11 @@ class Login extends React.Component {
     
     
 <div class="background"></div>
-    <div class='overlay'>    
 
-          <h1 class="h3 mb-3 fw-normal">Connexion</h1>
+    <div class='overlay'>    
+    <div class="titre">
+          <h1 class="h3">Connexion</h1>
+    </div>
           <label for="inputEmail" class="visually-hidden">Email address</label>
           <div class="col-6 col-sm-4 form-group">
           <input name ="login" class="form-control text-center" placeholder="Pseudo" onChange={(e) =>this.handleChange(e)} />
@@ -58,22 +60,20 @@ class Login extends React.Component {
           </div>
           <div class="checkbox mb-3">
             <label>
-              <input type="checkbox" value="remember-me"/> Remember me
+              <input type="checkbox" value="remember-me"/> Enregistrer le mot de passe
             </label>
           </div>
-          <div class="col-6 col-sm-2 form-group">
-          <button class="w-100 btn btn-lg btn-primary" type="submit" onClick={() => this.login()}>Sign in</button>
-          </div>
-          <br></br>
-          <div class="col-6 col-sm-2 form-group">
-          <button class="w-100 btn btn-lg btn-primary" type="submit" onClick={() => window.alert("Avez vous oublié votre mot de passe ? ")}>Mot De Passe Oublié</button>
-          
-          </div>
-          </div>
-          
 
-
+          <div class="boutonlogin">
+          <div className="modal-footer">
+        <button className="btn btn-primary" type="submit" id="bouton1" onClick={() => this.login()}>Se connecter</button>
+        <button class="w-1000 btn  btn-primary" type="submit" id ="bouton1" onClick={() => window.alert("Avez vous oublié votre mot de passe ? ")}>Mot De Passe Oublié</button>
+                        </div>
+        </div>
+        </div>
+          <div class='overlay2'>          </div>     
           </center>
+
       </main>
 
         
