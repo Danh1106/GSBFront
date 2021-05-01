@@ -1,62 +1,74 @@
-.background{
-  background-image:url("./gsb.jpg");
-  background-size:80%;
-  height:660px;
-  width:700px;
-  margin-top:50px;
-  margin-left:450px;
-  background-repeat:no-repeat;
-  position:absolute;
-  }
 
-
-
-
-input,label {
-    margin:30px 0px 10px 0px;
-    letter-spacing: 4px;
-    font-size:18px;
-    font-weight: bolder;
-    
+* {
+  font-family: 'Red Hat Display', sans-serif;
 }
-input:hover{
-
-        background-color: rgb(51, 156, 212);
-      
+html, body, main {
+  height: 100%;
 }
-
-.overlay {
-
-
-    opacity: 0.85;
-    filter: alpha(opacity=85);
-    height: 1292px;
-    width: 1060px;
-right:0;    
+#panel-left {
+  display: flex !important;
+  align-items: center;
+  background: linear-gradient(#000000, #334491);
+  height: 100%;
 position:absolute;
-  }
-  .overlay2 {
+margin:auto;
 
-    background: linear-gradient(#000000, #334491);
-    opacity: 15;
-    filter: alpha(opacity=5);
-    height: 1292px;
-    width: 1600px;
-    margin-left:-1200px;
-
-  }
-.h3 {
-
-  font-weight: bold; 
-    color:rgb(51, 156, 212);
-font-family: 'Rouge Script', cursive; 
-font-size: 100px; font-weight: normal; line-height: 38px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #000000;
 }
-.titre {
-  margin-top:150px;
+#panel-right {
+  display: flex !important;
+  align-items: center;
+  background-color: #F1F6F9;
+  position:absolute;
+  height: 100%;
+ right:0;
 }
-.boutonlogin {
-  display: inline-block;
-    margin-left:0px;
-    text-align:center;
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+margin:auto;
+}
+h2 {
+  color: #14274E;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+#panel-left .logo-container svg {
+  width: 220px;
+}
+
+
+#panel-right input {
+  background-color: unset;
+  border: 0;
+  border-bottom: 2px solid #394867;
+  border-radius: 0;
+  font-weight: 400;
+  width:500px;
+  margin:auto;
+  padding:10px;
+
+}
+
+.btn.btn-primary {
+  border: 0 !important;
+  border-radius: 50px !important;
+  background-color: #14274E !important;
+  padding: 15px 40px !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+}
+
+.links a {
+  color: #14274E;
+  
+}
+
+@media only screen and (max-width: 767px) {
+  #panel-left {
+      display: none !important;
+  }
 }

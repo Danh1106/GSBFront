@@ -18,6 +18,7 @@ class Login extends React.Component {
             [name]:value
         })
     }
+    
 
     async login() {
         try {
@@ -38,42 +39,53 @@ class Login extends React.Component {
 
     render() {
         return (
+          <main class="row">
 
-            <main class="form-signin">
+          <section class="col-md-6" id="panel-left">
+              <div class="container align-self-center">
+                  <div class="row">
+                      <h1 class="col-8 text-center">Bienvenue sur GSB Galaxy Swiss Bourdin</h1>
+                      
+                  </div>
 
-<center>
-    
-    
-<div class="background"></div>
 
-    <div class='overlay'>    
-    <div class="titre">
-          <h1 class="h3">Connexion</h1>
-    </div>
-          <label for="inputEmail" class="visually-hidden">Email address</label>
-          <div class="col-6 col-sm-4 form-group">
-          <input name ="login" class="form-control text-center" placeholder="Pseudo" onChange={(e) =>this.handleChange(e)} />
-          </div>
-          <label for="inputPassword" class="visually-hidden">Password</label>
-          <div class="col-6 col-sm-4 text-center form-group"  >
-          <input type="password" name="mdp" class="form-control text-center" placeholder="Mot De Passe"onChange={(e) =>this.handleChange(e)}  />
-          </div>
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"/> Enregistrer le mot de passe
-            </label>
-          </div>
+  
+              </div>
+          </section>
+  
+  
+          <section class="col-md-6" id="panel-right">
+              <div class="container">
+                  <div class="row mb-5">
+                      <h2 class="col-12 text-center">Se connecter</h2>
+                  </div>
+                  <div class="row">                    
 
-          <div class="boutonlogin">
-          <div className="modal-footer">
-        <button className="btn btn-primary" type="submit" id="bouton1" onClick={() => this.login()}>Se connecter</button>
-        <button class="w-1000 btn  btn-primary" type="submit" id ="bouton1" onClick={() => window.alert("Avez vous oublié votre mot de passe ? ")}>Mot De Passe Oublié</button>
-                        </div>
-        </div>
-        </div>
-          <div class='overlay2'>          </div>     
-          </center>
+                            
+                          <div class="form-group">
+                          
+                          <input name ="login" class="form-control text-center " placeholder="Pseudo" onChange={(e) =>this.handleChange(e)} />
+                          </div>
+                          <div class="form-group">
+                          <input type="password" name="mdp" class="form-control text-center" placeholder="Mot De Passe"onChange={(e) =>this.handleChange(e)}  />
+                          </div>
+                          
 
+                          <div class="form-group text-center pt-4">
+                          <button className="btn btn-primary" type="submit" id="bouton1" onClick={() => this.login()}>Se connecter</button>
+                          </div>
+                      
+                  </div>
+                  <div class="row mt-5">
+                      <div class="col-12 links text-center">
+                          <div>
+                              <a href="#">Mot De Passe Oublié</a>
+                          </div>
+                        
+                      </div>
+                  </div>
+              </div>
+          </section>
       </main>
 
         
@@ -81,6 +93,7 @@ class Login extends React.Component {
         }
     }
 
+    
 
 
 export default withRouter(Login);

@@ -31,7 +31,10 @@ class Header extends React.Component {
                   <a class="nav-link active" href="Accueil">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="bills">Fiche De Frais</a>
+                  <a class="nav-link active" href="bills">Modification Fiche De Frais</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="create">Creation Fiche De Frais</a>
                 </li>
 
                 <li class="nav-item2">

@@ -2,8 +2,9 @@ import React from 'react'
 import '../../src/App.css';
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
-import Createbill from '../components/createBill/CreateBill'
-class CreateBill extends React.Component {
+import CreateBill from '../components/createBill/CreateBill'
+
+class CreateBills extends React.Component {
   constructor(props){
     super(props)
   }
@@ -18,4 +19,4 @@ class CreateBill extends React.Component {
   }
 }
 
-export default CreateBill;
+export default CreateBills;
