@@ -1,0 +1,87 @@
+h1 {
+    padding: 30px 30px 30px 30px;
+    margin-bottom:150px;
+    letter-spacing:10px;
+    }
+    .modal-header h5 {
+    
+        color:rgb(4, 1, 39);
+        background-color:rgb(51, 156, 212);
+        border-style:inherit;
+        border-radius: 30px;
+        color:white;
+    }
+    
+    .container{
+        padding:4rem;
+        text-align:center;
+        
+    }
+    .btnmodifier {
+        background-color:grey;
+    }
+    
+    .modal-dialog{
+        margin-top:350px;
+        max-width: 90vw !important;
+    }
+    .modal-body {
+        
+        padding:2rem;
+        border-style:groove;
+        border-radius:10px;
+        border-color:rgb(255, 255, 255);
+        
+    }
+    .btn
+    .fraishorsforfait {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    tr{
+        background-color:rgb(255, 255, 255);
+        position:relative;
+    padding-top:20px;
+    border-style:groove;
+    border-width: 20px;
+    
+    border-color:rgb(51, 156, 212);
+        }
+        td {
+            padding-top:20px;
+            padding-bottom:20px;
+            padding-right:20px;   
+            border-style: inset;
+            border-radius:10px;
+            
+    
+          }
+          th{
+              color:rgb(22, 22, 146);
+          }
+          button:hover {
+           text-align:center;
+           background-color:#339cd4;
+           
+          }
+          button {
+    
+    
+      background-color: #ffffff;
+      color: black;
+      font-size: 16px;
+      padding: 8px 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+          }
+    
+    
+     
+          .background3 {
+          background: linear-gradient(#339cd4, #36468f);
+          height:1310px;
+          }
+       

@@ -2,7 +2,7 @@ import './Login.css'
 import React from 'react'
 import {withRouter} from 'react-router-dom'
 import {getToken} from '../../api/auth'
-
+import Modal from "react-bootstrap4-modal"
 class Login extends React.Component {
     constructor(props) {
         super (props)
@@ -18,7 +18,11 @@ class Login extends React.Component {
             [name]:value
         })
     }
-    
+    ShowModal() {
+        this.setState({
+            visible: !this.state.visible
+        })
+    }
 
     async login() {
         try {
@@ -30,13 +34,13 @@ class Login extends React.Component {
         localStorage.setItem('token',token) 
         this.props.history.push('/Accueil')
     }
-  }catch (e) {
-      console.error(e)
-  }
+} catch (err){
+    this.setState({
+        visible: !this.state.visible
+    })
+}
 
-
-    }
-
+}
     render() {
         return (
           <main class="row">
@@ -81,7 +85,17 @@ class Login extends React.Component {
                           <div>
                               <a href="#">Mot De Passe Oublié</a>
                           </div>
-                        
+                          <Modal visible={this.state.visible} dialogClassName="" role="alert" onClickBackdrop={() => this.ShowModal()}>
+
+<div className="modal-body alert alert-danger">
+    
+    <h6 className="centrer">Votre mot de passe ou votre identifiant est incorrect.</h6>
+   
+  
+</div>                  
+  
+
+    </Modal>
                       </div>
                   </div>
               </div>
