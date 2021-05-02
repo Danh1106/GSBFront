@@ -167,6 +167,7 @@ render() {
               }
             </tbody>
             </table>
+            
                     <Modal dialogClassName="ok" visible={this.state.visible} onClickBackdrop={() => this.showModal()}>
                         <div className="modal-header">
                             <h5 className="modal-title">MODIFICATION DE FRAIS</h5>
