@@ -1,5 +1,5 @@
 export const getBills = async (id) => {
-    let response = await fetch('https://gsbbackgarcia.herokuapp.com/fiches/'+ id, {
+    let response = await fetch('http://localhost:3001/fiches/'+ id, {
         method: 'GET',
         headers: {
             'Accept' : 'application / json',
@@ -11,7 +11,7 @@ export const getBills = async (id) => {
 }
 
 export const getLigneFraisForfait = async (id, mois) => {
-    let response = await fetch('https://gsbbackgarcia.herokuapp.com/fiches/lignefraisforfait/'+ id + '/' + mois , {
+    let response = await fetch('http://localhost:3001/fiches/lignefraisforfait/'+ id + '/' + mois , {
         method: 'GET',
         headers: {
             'Accept' : 'application / json',
@@ -22,7 +22,7 @@ export const getLigneFraisForfait = async (id, mois) => {
     return ligneFraisForfait
 }
 export const getLigneFraisHorsForfait = async (id, mois) => {
-    let response = await fetch('https://gsbbackgarcia.herokuapp.com/fiches/lignefraishorsforfait/'+ id + '/' + mois , {
+    let response = await fetch('http://localhost:3001/fiches/lignefraishorsforfait/'+ id + '/' + mois , {
         method: 'GET',
         headers: {
             'Accept' : 'application / json',
@@ -34,7 +34,7 @@ export const getLigneFraisHorsForfait = async (id, mois) => {
 }
 
 export const postAddFiche = async (ficheFrais) => {
-    let response = await fetch('https://gsbbackgarcia.herokuapp.com/fiches/new', {
+    let response = await fetch('http://localhost:3001/fiches/new', {
         method: 'POST',
         headers: {
             'Accept' : 'application / json',
@@ -47,7 +47,7 @@ export const postAddFiche = async (ficheFrais) => {
 }
 
 export const postLigneFraisForfait = async (ligneFraisForfait) => {
-    let response = await fetch('https://gsbbackgarcia.herokuapp.com/fraisforfait/lignefraisforfait/new', {
+    let response = await fetch('http://localhost:3001/fraisforfait/lignefraisforfait/new', {
         method: 'POST',
         headers: {
             'Accept' : 'application / json',
@@ -60,7 +60,7 @@ export const postLigneFraisForfait = async (ligneFraisForfait) => {
 }
 
 export const postLigneFraisHorsForfait = async (ligneFraisHorsForfait) => {
-    let response = await fetch('https://gsbbackgarcia.herokuapp.com/fraisforfait/lignefraishorsforfait/new', {
+    let response = await fetch('http://localhost:3001/fraisforfait/lignefraishorsforfait/new', {
         method: 'POST',
         headers: {
             'Accept' : 'application/json',
@@ -74,7 +74,7 @@ export const postLigneFraisHorsForfait = async (ligneFraisHorsForfait) => {
 
 export const putLigneFraisForfait = async (id, mois, idFraisForfait,quantite) => {
     
-    let response = await fetch('https://gsbbackgarcia.herokuapp.com/fiches/lignefraisforfait/' + id + '/' + mois +'/' + idFraisForfait , {
+    let response = await fetch('http://localhost:3001/fiches/lignefraisforfait/' + id + '/' + mois +'/' + idFraisForfait , {
         method: 'PUT',
         headers: {
             'Accept' : 'application/json',
@@ -87,7 +87,7 @@ export const putLigneFraisForfait = async (id, mois, idFraisForfait,quantite) =>
 }
 
 export const putLigneFraisHorsForfait = async (id, ligneFraisHorsForfait) => {
-    let response = await fetch('https://gsbbackgarcia.herokuapp.com/fiches/lignefraishorsforfait/' + id , {
+    let response = await fetch('http://localhost:3001/fiches/lignefraishorsforfait/' + id , {
         method: 'PUT',
         headers: {
             'Accept' : 'application/json',
